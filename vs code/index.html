@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IDE Replica</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/codemirror.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/theme/dracula.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="file-explorer">
+        <ul id="fileList">
+            <!-- Dynamic file and folder list will be populated here -->
+        </ul>
+        <button onclick="createNewFile()">New File</button>
+        <button onclick="createNewFolder()">New Folder</button>
+    </div>
+
+    <div class="editor">
+        <div class="tabs" id="tabs">
+            <!-- Dynamic tabs will be populated here -->
+        </div>
+        <div class="code-area">
+            <textarea id="editor"></textarea>
+        </div>
+        <div class="buttons">
+            <button class="run" id="runCode">Run code</button>
+            <button class="preview" id="previewCode">Preview</button>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/codemirror.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/mode/javascript/javascript.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/mode/xml/xml.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/mode/css/css.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/mode/htmlmixed/htmlmixed.min.js"></script>
+
+<script src="script.js"></script>
+</body>
+</html>
